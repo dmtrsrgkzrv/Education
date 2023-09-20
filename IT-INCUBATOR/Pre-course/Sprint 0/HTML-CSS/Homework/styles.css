@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.title {
+    color: #363940;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 43px;
+}
+
+.text {
+    color: #95A1BB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+html, body {
+    font-family: "Rubik", "sans-serif";
+}
+
+.header {
+    background-color: #0A61F7;
+    padding: 14px 0;
+}
+
+.menu-link {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.main-title {
+    color: #363940;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 68px;
+    margin-bottom: 30px;
+}
+
+.button {
+    width: 152px;
+    height: 50px;
+    border-radius: 4px;
+    background: #0A61F7;
+    font-size: 14px;
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.6px; /* 140% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.rates-section {
+    background-color: #F9FAFC;
+    padding: 100px 0;
+}
+
+.rates-section .title {
+    margin-bottom: 20px;
+}
+
+.rates-section .text {
+    margin-bottom: 40px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #95A1BB;
+    width: 241px;
+    padding: 15px;
+    text-align: center;
+}
+
+.table-title {
+    color: #363940;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.table-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.table-subtitle.gray {
+    color: #95A1BB;
+}
+
+.table-link {
+    color: #0A61F7;
+}
+
+.table-button {
+    width: 140px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #0A61F7;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19.6px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #0A61F7;
+}
+
+.table-button.active {
+    background: #0A61F7;
+    color: #FFFFFF;
+}
+
+.table-footer td {
+    padding: 30px 0;
+}
+
+.create-account-section {
+    padding: 100px;
+}
+
+.create-account-section .title {
+    margin-bottom: 20px;
+}
+
+.create-account-section .text {
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.list-item {
+    list-style-image: url("./assets/images/check.svg");
+    margin-left: 30px;
+    margin-bottom: 15px;
+    color: #363940;
+}
+
+input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
+    color: #95A1BB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    font-family: inherit;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="email"], input[type="password"], input[type="date"], select {
+    width: 230px;
+    height: 50px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url("./assets/images/calendar.svg") no-repeat;
+}
+
+select {
+    background: url("./assets/images/arrow-down.svg") no-repeat right 15px top 50%;
+    appearance: none;
+}
