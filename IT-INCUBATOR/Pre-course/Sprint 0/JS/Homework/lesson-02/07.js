@@ -8,6 +8,7 @@ let passportMarried = {
 };
 
 let passportMarriedCopy = { ...passportMarried, married: true, address: { ...passportMarried.address } };
+passportMarriedCopy.married = true;
 
 console.log(passportMarried);
 console.log(passportMarriedCopy);
