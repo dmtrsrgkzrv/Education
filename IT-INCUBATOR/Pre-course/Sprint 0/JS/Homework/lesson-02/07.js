@@ -11,4 +11,4 @@ let passportMarriedCopy = { ...passportMarried, married: true, address: { ...pas
 passportMarriedCopy.married = true;
 
 console.log(passportMarried);
-console.log(passportMarriedCopy);
+console.log(passportMarriedCopy.married);
