@@ -1,7 +1,17 @@
+/* ================ Сбросс стилей ================ */
+
 * {
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
+}
+
+/* ================ Общие стили ================ */
+
+html,
+body {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
 }
 
 a {
@@ -9,7 +19,7 @@ a {
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
 }
 
 button {
@@ -31,9 +41,7 @@ button {
     line-height: 22px;
 }
 
-html, body {
-    font-family: "Rubik", "sans-serif";
-}
+/* ================ Стили для Хедера ================ */
 
 .header {
     background-color: #0A61F7;
@@ -49,6 +57,8 @@ html, body {
     text-transform: uppercase;
 }
 
+/* ================ Стили для 1-й секции ================ */
+
 .main-title {
     color: #363940;
     font-size: 58px;
@@ -57,20 +67,24 @@ html, body {
     margin-bottom: 30px;
 }
 
+.main .text {
+    margin-bottom: 40px;
+}
+
 .button {
     width: 152px;
-    height: 50px;
+    height: 51px;
     border-radius: 4px;
     background: #0A61F7;
     font-size: 14px;
     color: #FFF;
-    text-align: center;
-    font-style: normal;
     font-weight: 500;
-    line-height: 19.6px; /* 140% */
+    line-height: 19.6px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
+
+/* ================ Стили для 2-й секции ================ */
 
 .rates-section {
     background-color: #F9FAFC;
@@ -89,10 +103,10 @@ html, body {
     border-collapse: collapse;
 }
 
-th, td {
+th, td { /* Стилизуем по названию тега */
     border: 1px solid #95A1BB;
-    width: 241px;
-    padding: 15px;
+    width: 240px;
+    padding: 15px 0;
     text-align: center;
 }
 
@@ -104,6 +118,7 @@ th, td {
 }
 
 .table-subtitle {
+    color: #363940;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -112,7 +127,7 @@ th, td {
 }
 
 .table-subtitle.gray {
-    color: #95A1BB;
+    color: #95A1BB; /* стиль применится, если у элемента будут эти оба класса */
 }
 
 .table-link {
@@ -121,7 +136,7 @@ th, td {
 
 .table-button {
     width: 140px;
-    padding: 8px;
+    padding: 8px 0;
     border-radius: 4px;
     border: 1px solid #0A61F7;
     font-size: 12px;
@@ -132,21 +147,23 @@ th, td {
     color: #0A61F7;
 }
 
-.table-button.active {
+.table-button.active { /* эти свойства применятся, если у кнопки будут оба класса */
     background: #0A61F7;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .table-footer td {
     padding: 30px 0;
 }
 
+/* ================ Стили для 3-й секции ================ */
+
 .create-account-section {
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .create-account-section .title {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .create-account-section .text {
@@ -159,6 +176,17 @@ th, td {
     margin-left: 30px;
     margin-bottom: 15px;
     color: #363940;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+}
+
+input, select, fieldset, textarea {
+    border-radius: 4px;
+    border: 1px solid #95A1BB;
+    padding: 14px 15px;
 }
 
 input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
@@ -189,15 +217,30 @@ textarea {
     resize: none;
 }
 
-button {
+form .button {
     width: 100%;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-    background: url("./assets/images/calendar.svg") no-repeat;
+select {
+    background: url(./assets/images/Arrow-down.svg) no-repeat right 15px top 50%;
+    appearance: none;
 }
 
-select {
-    background: url("./assets/images/arrow-down.svg") no-repeat right 15px top 50%;
-    appearance: none;
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(./assets/images/Calendar.svg) no-repeat;
+}
+
+/* ================ Стили для футера ================ */
+
+.footer {
+    background-color: #0A61F7;
+    text-align: center;
+    padding: 20px 0;
+}
+
+small {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color:#FFF;
 }
