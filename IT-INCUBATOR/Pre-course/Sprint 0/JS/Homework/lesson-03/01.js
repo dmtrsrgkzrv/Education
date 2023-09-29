@@ -4,4 +4,4 @@ function createColorString() {
     return colors.filter(color => color === "черный" || color === "красный" || color === "желтый");
 }
 
-console.log(createColorString().join("-"));
+console.log(createColorString().join('-'));
