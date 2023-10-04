@@ -26,4 +26,4 @@ const newObj = {
     address: 'Unknown'
 }
 
-console.log(...users2, newObj);
+console.log([...users2, newObj]);
