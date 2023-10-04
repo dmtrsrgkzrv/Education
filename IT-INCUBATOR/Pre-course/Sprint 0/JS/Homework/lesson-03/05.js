@@ -19,15 +19,11 @@ const users2 = [
     },
 ];
 
-<<<<<<< HEAD
 const newObj = {
     id: 4,
     user: 'Ivan',
     surName: 'Susanin',
     address: 'Unknown'
-};
+}
 
 console.log(...users2, newObj);
-=======
-console.log([...users2], {id: 4, user: 'Ivan', surName: 'Susanin', address: 'Unknown'});
->>>>>>> origin/Main
