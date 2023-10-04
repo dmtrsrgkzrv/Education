@@ -31,6 +31,4 @@ const users3 = [
     },
 ];
 
-console.log(users3.map(() => (
-    [{...users3, isMarried: true}]
-)));
+console.log(users3.map(element => element === element ? {...element, isMarried: true} : element));
